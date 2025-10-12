@@ -7,8 +7,23 @@
         },
         {
             "label": "2025-10-12_00-26-12",
-            "content": "class relogio :\n    def __init__(self) :\n        self._hora = int\n        self._minuto = int\n        self._segundos = int\n\n    def get",
+            "content": "@@ -3,13 +3,15 @@\n ass \n-Watch\n+relogio\n  :%0A \n",
             "lines": "7"
+        },
+        {
+            "label": "2025-10-12_12-21-41",
+            "content": "@@ -52,19 +52,16 @@\n ._ho\n-ur :int = 0\n+ra = int\n %0A   \n@@ -78,24 +78,21 @@\n _minuto \n-:\n+= \n int\n- = 0\n %0A       \n@@ -109,161 +109,24 @@\n undo\n- :int = 0%0A%0A    def mostrar(self) -%3E None:%0A        print(self)%0A%0A%0A    def __srt__(self):%0A        return f%22%7Bself._hora:2d%7D:%7Bself._minuto:2d%7D:%7Bself._segundo%7D%7D%22%0A%0A\n+s = int%0A%0A    def get\n",
+            "lines": "7"
+        },
+        {
+            "label": "2025-10-12_12-45-01",
+            "content": "@@ -48,18 +48,18 @@\n self._ho\n+u\n r\n-a\n  :int = \n@@ -268,17 +268,8 @@\n ndo%7D\n+%7D\n %22%0A\n-def main():\n+%0A\n",
+            "lines": "13"
+        },
+        {
+            "label": "2025-10-12_12-45-39",
+            "content": "class Watch :\n    def __init__(self) :\n        self._hora :int = 0\n        self._minuto :int = 0\n        self._segundo :int = 0\n\n    def mostrar(self) -> None:\n        print(self)\n\n\n    def __srt__(self):\n        return f\"{self._hora:2d}:{self._minuto:2d}:{self._segundo}\"\ndef main():",
+            "lines": "13"
         }
     ]
 }
