@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2025-10-11_21-58-28",
+            "content": "@@ -1,8 +1,26 @@\n+@@ -1,54 +0,0 @@%0A-\n class re\n@@ -26,17 +26,19 @@\n elogio :\n-%0A\n+%250A\n     def \n@@ -53,17 +53,19 @@\n (self) :\n-%0A\n+%250A\n         \n@@ -73,84 +73,5 @@\n elf.\n-_hora = int%0A        self._minuto = int%0A        self._segundos = int%0A%0A    def get\n+%0A\n",
+            "lines": "2"
+        },
+        {
+            "label": "2025-10-12_00-26-12",
+            "content": "class relogio :\n    def __init__(self) :\n        self._hora = int\n        self._minuto = int\n        self._segundos = int\n\n    def get",
+            "lines": "7"
+        }
+    ]
+}
