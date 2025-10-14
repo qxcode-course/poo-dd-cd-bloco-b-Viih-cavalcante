@@ -22,8 +22,58 @@
         },
         {
             "label": "2025-10-12_12-45-39",
-            "content": "class Watch :\n    def __init__(self) :\n        self._hora :int = 0\n        self._minuto :int = 0\n        self._segundo :int = 0\n\n    def mostrar(self) -> None:\n        print(self)\n\n\n    def __srt__(self):\n        return f\"{self._hora:2d}:{self._minuto:2d}:{self._segundo}\"\ndef main():",
+            "content": "@@ -281,85 +281,4 @@\n n():\n-%0A    relogio = Watch (0,0,0)%0A    while True:%0A        line :str = input()%0A        \n",
             "lines": "13"
+        },
+        {
+            "label": "2025-10-13_21-18-53",
+            "content": "@@ -362,255 +362,4 @@\n     \n-print(%22$ + line%22)%0A        args : list %5Bstr%5D = line.split(%22%22)%0A        cmd =  args%5B0%5D%0A        if cmd == %22end%22 :%0A            break%0A        elif cmd == %22show%22:%0A            print(mostrar)%0A            relogio.mostrar()%0A%0Aif __name__ == __main__ :%0A    main()%0A\n",
+            "lines": "17"
+        },
+        {
+            "label": "2025-10-13_22-16-28",
+            "content": "@@ -305,12 +305,10 @@\n  (0,\n- \n 0,\n- \n 0)%0A \n@@ -514,16 +514,43 @@\n %22show%22:%0A\n+            print(mostrar)%0A\n         \n@@ -591,17 +591,16 @@\n  == \n-%22\n __main__\n %22 :%0A\n@@ -595,17 +595,16 @@\n __main__\n-%22\n  :%0A    m\n",
+            "lines": "27"
+        },
+        {
+            "label": "2025-10-13_22-19-21",
+            "content": "@@ -299,16 +299,23 @@\n  Watch (\n+0, 0, 0\n )%0A    wh\n@@ -372,16 +372,16 @@\n t(%22$\n-%22\n  + line\n+%22\n )%0A  \n@@ -418,17 +418,16 @@\n .split(%22\n- \n %22)%0A     \n",
+            "lines": "26"
+        },
+        {
+            "label": "2025-10-13_22-30-00",
+            "content": "@@ -58,20 +58,17 @@\n  :int = \n-hora\n+0\n %0A       \n@@ -88,22 +88,17 @@\n  :int = \n-minuto\n+0\n %0A       \n@@ -119,23 +119,17 @@\n  :int = \n-segundo\n+0\n %0A%0A    de\n",
+            "lines": "26"
+        },
+        {
+            "label": "2025-10-13_22-41-49",
+            "content": "@@ -32,47 +32,10 @@\n self\n-, hora: int, minuto: int, segundo: int\n )\n+ \n :%0A  \n@@ -317,15 +317,8 @@\n ch (\n-0, 0, 0\n )%0A  \n",
+            "lines": "26"
+        },
+        {
+            "label": "2025-10-13_22-54-16",
+            "content": "@@ -237,18 +237,18 @@\n  def __s\n-t\n r\n+t\n __(self)\n",
+            "lines": "26"
+        },
+        {
+            "label": "2025-10-13_22-57-23",
+            "content": "@@ -251,14 +251,8 @@\n elf)\n--%3E str\n :%0A  \n",
+            "lines": "26"
+        },
+        {
+            "label": "2025-10-13_22-59-50",
+            "content": "@@ -320,19 +320,16 @@\n _segundo\n-:2d\n %7D%22%0Adef m\n",
+            "lines": "26"
+        },
+        {
+            "label": "2025-10-13_23-00-09",
+            "content": "@@ -284,17 +284,16 @@\n f._hora:\n-0\n 2d%7D:%7Bsel\n@@ -302,17 +302,16 @@\n _minuto:\n-0\n 2d%7D:%7Bsel\n@@ -321,17 +321,16 @@\n segundo:\n-0\n 2d%7D%22%0Adef\n",
+            "lines": "26"
+        },
+        {
+            "label": "2025-10-13_23-01-07",
+            "content": "class Watch :\n    def __init__(self, hora: int, minuto: int, segundo: int):\n        self._hora :int = hora\n        self._minuto :int = minuto\n        self._segundo :int = segundo\n\n    def mostrar(self) -> None:\n        print(self)\n\n\n    def __str__(self)-> str:\n        return f\"{self._hora:02d}:{self._minuto:02d}:{self._segundo:02d}\"\ndef main():\n    relogio = Watch (0, 0, 0)\n    while True:\n        line :str = input()\n        print(\"$\" + line)\n        args : list [str] = line.split(\" \")\n        cmd =  args[0]\n        if cmd == \"end\" :\n            break\n        elif cmd == \"show\":\n            relogio.mostrar()\n\nif __name__ == \"__main__\" :\n    main()\n",
+            "lines": "26"
         }
     ]
 }
