@@ -9,16 +9,21 @@ class Watch :
 
 
     def __str__(self)-> str:
-        return f"{self._hora:02d}"{self._minuto:02d} {self._minuto:02d}""
-        return f"{self._hora:02d}:{self._minuto:02d}:{self._segundo:02d}"
-    def set(self,hora :int, minuto :int, segundo :int) -> None: 
-        if isinstance(hora, int) and 0 <= hora <= 23:
-            self_.hora = hora
+        return f"{self._hora:02d}:{self._minuto:02d}:{self._minuto:02d}"
+    def set(self, hora: int, minuto: int, segundo: int) -> None:
+        if 0 <= hora <= 23:
+            self._hora = hora
         else:
-           print("fail:hora invalida")
-        if isinstance(minuto, int) and 0 <= minuto <= 59;
-            self_.minuto = minuto
-            else    
+            print("fail: hora invalida")
+        if 0 <= minuto <= 59:
+            self._minuto = minuto
+        else:
+            print("fail: minuto invalido")
+        if 0 <= segundo <= 59:
+            self._segundo = segundo
+        else:
+            print("fail: segundo invalido")
+
 def main():
     relogio = Watch (0, 0, 0)
 

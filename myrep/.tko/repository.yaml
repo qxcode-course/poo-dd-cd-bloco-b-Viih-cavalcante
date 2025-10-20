@@ -8,7 +8,7 @@ sources:
 - database: poo
   link: https://github.com/qxcodepoo/arcade/blob/master/Readme.md
   cache_path: C:\Users\vivi5\OneDrive\Documentos\poo_cd\poo-dd-cd-bloco-b-Viih-cavalcante\myrep\.tko\cache\poo.md
-  cache_timestamp: '2025-10-20 15:44:33'
+  cache_timestamp: '2025-10-20 16:44:53'
   filters:
   - acesso
   - simples
@@ -16,7 +16,8 @@ expanded:
 - poo@campanha-principal
 - poo@bloco_b-modificadores-de-acesso
 - poo@bloco_b-agregação-simples
-tasks: {}
+tasks:
+  poo@relogio: '{rate:15}'
 flags:
   quests: 0
   tracks: 0
