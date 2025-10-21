@@ -2,8 +2,13 @@
     "patches": [
         {
             "label": "2025-10-11_21-59-16",
-            "content": "",
-            "lines": "0"
+            "content": "@@ -1,8 +1,27 @@\n+@@ -1,212 +0,0 @@%0A-\n class ca\n@@ -25,17 +25,19 @@\n  camisa:\n-%0A\n+%250A\n     def \n@@ -56,17 +56,21 @@\n f) -\n-%3E\n+%253E\n  None :\n-%0A\n+%250A\n     \n@@ -98,11 +98,17 @@\n r = \n-%22%22%0A\n+%2522%2522%250A\n     \n@@ -133,15 +133,19 @@\n f) -\n-%3E\n+%253E\n  str:\n-%0A\n+%250A\n     \n@@ -170,17 +170,19 @@\n tamanho \n-%0A\n+%250A\n     def \n@@ -233,17 +233,26 @@\n s = \n-%5B%22pp%22%0A\n+%255B%2522pp%2522%250A\n     :::\n+%0A\n",
+            "lines": "2"
+        },
+        {
+            "label": "2025-10-21_03-11-27",
+            "content": "class camisa:\n    def __init__(self) -> None :\n        self._Tamanho :str = \"\"\n    def getTamanho(self) -> str:\n        return  self._tamanho \n    def setTamanho(self,valor: str):_tamanhos_validos = [\"pp\"\n    :::",
+            "lines": "7"
         }
     ]
 }

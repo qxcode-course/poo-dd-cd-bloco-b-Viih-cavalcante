@@ -8,22 +8,22 @@ sources:
 - database: poo
   link: https://github.com/qxcodepoo/arcade/blob/master/Readme.md
   cache_path: C:\Users\vivi5\OneDrive\Documentos\poo_cd\poo-dd-cd-bloco-b-Viih-cavalcante\myrep\.tko\cache\poo.md
-  cache_timestamp: '2025-10-20 22:19:06'
+  cache_timestamp: '2025-10-21 03:11:15'
   filters:
   - acesso
   - simples
 expanded:
-- poo@campanha-principal
 - poo@bloco_b-modificadores-de-acesso
 - poo@bloco_b-agregação-simples
+- poo@campanha-principal
 tasks:
   poo@relogio: '{rate:100, human:irma, iagen:gpt_e_muito_bom_pra_explicar_duvidas_do_porque_esta_dando_errado,
     alone:6, study:180}'
 flags:
   quests: 0
-  tracks: 0
+  tracks: 1
   tasks: 0
   graph: 1
   xray: 0
 lang: py
-selected: poo@notebook
+selected: poo@charger

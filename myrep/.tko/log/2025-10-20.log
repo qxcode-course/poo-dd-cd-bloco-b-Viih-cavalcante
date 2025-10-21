@@ -49,3 +49,6 @@
 2025-10-20 23:18:08, MOVE, v:1, k:poo@relogio, mode:PICK
 2025-10-20 23:18:10, MOVE, v:1, k:poo@relogio, mode:BACK
 2025-10-20 23:19:45, SELF, v:1, k:poo@relogio, rate:100, human:irma, iagen:gpt_e_muito_bom_pra_explicar_duvidas_do_porque_esta_dando_errado, alone:6, study:180
+2025-10-20 23:25:24, MOVE, v:1, k:poo@camisa, mode:PICK
+2025-10-20 23:25:25, EXEC, v:1, k:poo@camisa, mode:LOCK, rate:100
+2025-10-20 23:25:26, EXEC, v:1, k:poo@camisa, mode:LOCK, rate:100
