@@ -97,8 +97,38 @@
         },
         {
             "label": "2025-10-20_17-01-18",
-            "content": "class Watch :\n    def __init__(self, hora: int, minuto: int, segundo: int) -> None:\n        self._hora :int = hora\n        self._minuto :int = minuto\n        self._segundo :int = segundo\n\n    def mostrar(self) -> None:\n        print(self)\n\n\n    def __str__(self)-> str:\n        return f\"{self._hora:02d}:{self._minuto:02d}:{self._minuto:02d}\"\n    def set(self, hora: int, minuto: int, segundo: int) -> None:\n        if 0 <= hora <= 23:\n            self._hora = hora\n        else:\n            print(\"fail: hora invalida\")\n        if 0 <= minuto <= 59:\n            self._minuto = minuto\n        else:\n            print(\"fail: minuto invalido\")\n        if 0 <= segundo <= 59:\n            self._segundo = segundo\n        else:\n            print(\"fail: segundo invalido\")\n\ndef main():\n    relogio = Watch (0, 0, 0)\n\n    while True:\n        line :str = input()\n        print(\"$\" + line)\n        args : list [str] = line.split()\n        cmd =  args[0]\n\n        if cmd == \"end\" :\n            break\n\n        elif cmd == \"show\":\n            relogio.mostrar()\n\n        elif cmd == \"set\":\n            hora = int(args[1])\n            minuto = int(args[2])\n            segundo = int(args[3])\n            relogio.set(hora, minuto, segundo)\n\n\nif __name__ == \"__main__\" :\n    main()\n",
+            "content": "@@ -323,22 +323,21 @@\n :%7Bself._\n-segund\n+minut\n o:02d%7D%22%0A\n",
             "lines": "50"
+        },
+        {
+            "label": "2025-10-20_22-24-32",
+            "content": "@@ -765,259 +765,8 @@\n o%22)%0A\n-    def nextSecond(self) -%3E None :%0A      if  self._segundo == 60:%0A        self._segundo = 0%0A        self._minuto += 1%0A      if self._minuto == 60:%0A          self._minuto = 0%0A          self._hora += 1%0A      if self._hora == 24:%0A          self._hora = 0\n %0Adef\n@@ -825,25 +825,8 @@\n ue:%0A\n-        try:%0A    \n     \n@@ -853,123 +853,8 @@\n t()%0A\n-        except EOFError:%0A            break%0A        line = line.strip()%0A        if line == %22%22:%0A            continue%0A\n     \n",
+            "lines": "50"
+        },
+        {
+            "label": "2025-10-20_22-39-38",
+            "content": "@@ -1101,18 +1101,14 @@\n     \n-raw_\n line\n-:\n  \n+:\n str \n@@ -1164,35 +1164,8 @@\n eak%0A\n-        print(%22$%22 + line)%0A%0A\n     \n@@ -1179,12 +1179,8 @@\n e = \n-raw_\n line\n@@ -1232,16 +1232,41 @@\n ontinue%0A\n+        print(%22$%22 + line)\n %0A       \n",
+            "lines": "64"
+        },
+        {
+            "label": "2025-10-20_22-55-12",
+            "content": "@@ -1184,20 +1184,16 @@\n t(%22$%22 + \n-raw_\n line)%0A%0A \n",
+            "lines": "66"
+        },
+        {
+            "label": "2025-10-20_22-55-27",
+            "content": "@@ -1472,81 +1472,8 @@\n t%22:%0A\n-            if len(args) %3C 4:%0A                continue%0A            try:%0A \n     \n@@ -1512,17 +1512,16 @@\n         \n- \n minuto =\n@@ -1534,17 +1534,16 @@\n rgs%5B2%5D)%0A\n- \n         \n@@ -1585,455 +1585,43 @@\n     \n-except ValueError :%0A                continue%0A            relogio.set(hora, minuto, segundo)%0A        elif cmd == %22next%22:%0A            relogio.nextSecond()%0A        elif cmd == %22init%22:%0A            relogio = Watch(0, 0, 0)%0A            if len(args) %3C 4:%0A                continue%0A            try:%0A                h = int(args%5B1%5D); m = int(args%5B2%5D); s = int(args%5B3%5D)%0A            except ValueError:%0A                continue%0A            relogio.set(h, m, s)\n+relogio.set(hora, minuto, segundo)%0A\n %0A%0Aif\n",
+            "lines": "66"
+        },
+        {
+            "label": "2025-10-20_23-11-11",
+            "content": "@@ -800,32 +800,8 @@\n e :%0A\n-      self._segundo +=1%0A\n     \n",
+            "lines": "81"
+        },
+        {
+            "label": "2025-10-20_23-14-40",
+            "content": "class Watch :\n    def __init__(self, hora: int, minuto: int, segundo: int) -> None:\n        self._hora :int = hora\n        self._minuto :int = minuto\n        self._segundo :int = segundo\n\n    def mostrar(self) -> None:\n        print(self)\n\n\n    def __str__(self)-> str:\n        return f\"{self._hora:02d}:{self._minuto:02d}:{self._segundo:02d}\"\n    def set(self, hora: int, minuto: int, segundo: int) -> None:\n        if 0 <= hora <= 23:\n            self._hora = hora\n        else:\n            print(\"fail: hora invalida\")\n        if 0 <= minuto <= 59:\n            self._minuto = minuto\n        else:\n            print(\"fail: minuto invalido\")\n        if 0 <= segundo <= 59:\n            self._segundo = segundo\n        else:\n            print(\"fail: segundo invalido\")\n    def nextSecond(self) -> None :\n      self._segundo +=1\n      if  self._segundo == 60:\n        self._segundo = 0\n        self._minuto += 1\n      if self._minuto == 60:\n          self._minuto = 0\n          self._hora += 1\n      if self._hora == 24:\n          self._hora = 0\ndef main():\n    relogio = Watch (0, 0, 0)\n\n    while True:\n        try:\n            raw_line: str = input()\n        except EOFError:\n            break\n        print(\"$\" + raw_line)\n\n        line = raw_line.strip()\n        if line == \"\":\n            continue\n\n        args : list [str] = line.split()\n        cmd =  args[0]\n\n        if cmd == \"end\" :\n            break\n\n        elif cmd == \"show\":\n            relogio.mostrar()\n\n        elif cmd == \"set\":\n            if len(args) < 4:\n                continue\n            try:\n             hora = int(args[1])\n             minuto = int(args[2])\n             segundo = int(args[3])\n            except ValueError :\n                continue\n            relogio.set(hora, minuto, segundo)\n        elif cmd == \"next\":\n            relogio.nextSecond()\n        elif cmd == \"init\":\n            relogio = Watch(0, 0, 0)\n            if len(args) < 4:\n                continue\n            try:\n                h = int(args[1]); m = int(args[2]); s = int(args[3])\n            except ValueError:\n                continue\n            relogio.set(h, m, s)\n\nif __name__ == \"__main__\" :\n    main()\n",
+            "lines": "82"
         }
     ]
 }

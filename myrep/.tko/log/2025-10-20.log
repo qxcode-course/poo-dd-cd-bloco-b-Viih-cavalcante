@@ -11,3 +11,41 @@
 2025-10-20 17:01:18, EXEC, v:1, k:poo@relogio, mode:FULL, rate:15, size:50
 2025-10-20 17:01:34, EXEC, v:1, k:poo@relogio, mode:FULL, rate:15
 2025-10-20 17:01:34, MOVE, v:1, k:poo@relogio, mode:BACK
+2025-10-20 22:19:16, MOVE, v:1, k:poo@motoca, mode:PICK
+2025-10-20 22:19:21, EXEC, v:1, k:poo@motoca, mode:FULL, rate:0, size:0
+2025-10-20 22:19:21, MOVE, v:1, k:poo@motoca, mode:BACK
+2025-10-20 22:19:39, MOVE, v:1, k:poo@grafite, mode:DOWN
+2025-10-20 22:19:41, MOVE, v:1, k:poo@grafite, mode:PICK
+2025-10-20 22:19:44, EXEC, v:1, k:poo@grafite, mode:FULL, rate:0, size:0
+2025-10-20 22:19:50, MOVE, v:1, k:poo@grafite, mode:BACK
+2025-10-20 22:19:56, MOVE, v:1, k:poo@motouber, mode:DOWN
+2025-10-20 22:19:56, MOVE, v:1, k:poo@motouber, mode:PICK
+2025-10-20 22:20:01, EXEC, v:1, k:poo@motouber, mode:FULL, rate:0, size:0
+2025-10-20 22:20:04, MOVE, v:1, k:poo@motouber, mode:BACK
+2025-10-20 22:20:07, MOVE, v:1, k:poo@notebook, mode:DOWN
+2025-10-20 22:20:08, MOVE, v:1, k:poo@notebook, mode:PICK
+2025-10-20 22:20:09, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:100, size:0
+2025-10-20 22:20:11, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:100
+2025-10-20 22:20:13, MOVE, v:1, k:poo@notebook, mode:BACK
+2025-10-20 22:20:30, MOVE, v:1, k:poo@tamagotchi, mode:DOWN
+2025-10-20 22:20:31, MOVE, v:1, k:poo@tamagotchi, mode:PICK
+2025-10-20 22:20:34, EXEC, v:1, k:poo@tamagotchi, mode:FULL, rate:0, size:0
+2025-10-20 22:20:35, MOVE, v:1, k:poo@tamagotchi, mode:BACK
+2025-10-20 22:20:37, MOVE, v:1, k:poo@charger, mode:DOWN
+2025-10-20 22:20:38, MOVE, v:1, k:poo@charger, mode:PICK
+2025-10-20 22:20:44, EXEC, v:1, k:poo@charger, mode:FULL, rate:0, size:0
+2025-10-20 22:20:44, MOVE, v:1, k:poo@charger, mode:BACK
+2025-10-20 22:21:28, MOVE, v:1, k:poo@relogio, mode:PICK
+2025-10-20 22:21:33, EXEC, v:1, k:poo@relogio, mode:FULL, rate:15
+2025-10-20 22:24:32, EXEC, v:1, k:poo@relogio, mode:FULL, rate:61, size:50
+2025-10-20 22:25:34, EXEC, v:1, k:poo@relogio, mode:FULL, rate:61
+2025-10-20 22:39:38, EXEC, v:1, k:poo@relogio, mode:FULL, rate:15, size:64
+2025-10-20 22:55:12, EXEC, v:1, k:poo@relogio, mode:FULL, rate:0, size:66
+2025-10-20 22:55:27, EXEC, v:1, k:poo@relogio, mode:FULL, rate:61, size:66
+2025-10-20 23:11:11, EXEC, v:1, k:poo@relogio, mode:FULL, rate:84, size:81
+2025-10-20 23:14:40, EXEC, v:1, k:poo@relogio, mode:FULL, rate:100, size:82
+2025-10-20 23:14:47, EXEC, v:1, k:poo@relogio, mode:FULL, rate:100
+2025-10-20 23:14:47, MOVE, v:1, k:poo@relogio, mode:BACK
+2025-10-20 23:18:08, MOVE, v:1, k:poo@relogio, mode:PICK
+2025-10-20 23:18:10, MOVE, v:1, k:poo@relogio, mode:BACK
+2025-10-20 23:19:45, SELF, v:1, k:poo@relogio, rate:100, human:irma, iagen:gpt_e_muito_bom_pra_explicar_duvidas_do_porque_esta_dando_errado, alone:6, study:180
