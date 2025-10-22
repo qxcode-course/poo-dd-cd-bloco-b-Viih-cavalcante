@@ -2,8 +2,18 @@
     "patches": [
         {
             "label": "2025-10-20_22-19-21",
-            "content": "",
+            "content": "@@ -1,257 +0,0 @@\n-class pessoa:%0A    def __init__(self) -%3E None:%0A        self._name :str = name%0A        self._age :int = age%0A%0A%0A%0A%0A%0A%0A%0Adef main():%0A     moto = motoca()%0A     while true:%0A         try:%0A             line = input().strip()%0A         except EOFERROR:%0A             break\n",
             "lines": "0"
+        },
+        {
+            "label": "2025-10-21_22-50-09",
+            "content": "@@ -105,1020 +105,153 @@\n e%0A%0A%0A\n-class motoca:%0A    def __init__(self, potencia :int = 1) -%3E None:%0A        self.potencia : int = potencia%0A        self.time : int = 0%0A        self.pessoa = None%0A%0A    def toString(self) -%3E str:%0A        if self.pessoa is None:%0A            person_str = %22empty%22%0A        else:%0A            person_str = f%22%7Bself.pessoa.get.Name()%7D:%7Bself.pessoa.get.Age()%7D%22%0A            return f%22power: %7Bself.potencia%7D, time :%7Bself.time%7D, person :(%7Bperson_str%7D)%22%0A    def __str__(self)-%3E str:%0A        return self.toString()   %0A%0A%0A%0A%0A%0Adef main():%0A     moto = motoca()%0A     while true:%0A         try:%0A             line = input().strip()%0A         except EOFERROR:%0A             break%0A         if line == %22%22:%0A             continue%0A         if not line.startswith(%22$%22):%0A             continue%0A         parts =line.split()%0A         cmd = parts%7B0%7D%0A         if cmd == %22$end%22:%0A             break%0A         elif cmd == %22$show%22:%0A             print(moto.toString())%0A         else:%0A             print(%22fail :unknown command%22)%0Aif __name__ == %22__ main__%22:%0A    main()\n+%0A%0A%0A%0A%0Adef main():%0A     moto = motoca()%0A     while true:%0A         try:%0A             line = input().strip()%0A         except EOFERROR:%0A             break\n",
+            "lines": "18"
+        },
+        {
+            "label": "2025-10-21_23-21-16",
+            "content": "class pessoa:\n    def __init__(self) -> None:\n        self._name :str = name\n        self._age :int = age\n\n\nclass motoca:\n    def __init__(self, potencia :int = 1) -> None:\n        self.potencia : int = potencia\n        self.time : int = 0\n        self.pessoa = None\n\n    def toString(self) -> str:\n        if self.pessoa is None:\n            person_str = \"empty\"\n        else:\n            person_str = f\"{self.pessoa.get.Name()}:{self.pessoa.get.Age()}\"\n            return f\"power: {self.potencia}, time :{self.time}, person :({person_str})\"\n    def __str__(self)-> str:\n        return self.toString()   \n\n\n\n\n\ndef main():\n     moto = motoca()\n     while true:\n         try:\n             line = input().strip()\n         except EOFERROR:\n             break\n         if line == \"\":\n             continue\n         if not line.startswith(\"$\"):\n             continue\n         parts =line.split()\n         cmd = parts{0}\n         if cmd == \"$end\":\n             break\n         elif cmd == \"$show\":\n             print(moto.toString())\n         else:\n             print(\"fail :unknown command\")\nif __name__ == \"__ main__\":\n    main()",
+            "lines": "46"
         }
     ]
 }

@@ -7,8 +7,13 @@
         },
         {
             "label": "2025-10-11_22-00-49",
-            "content": "class Chinela :\n    def __init__(self,)",
+            "content": "@@ -36,106 +36,4 @@\n lf,)\n- :%0A        self._Tamanho = int%0A        %0A%0A%0A    def getTamanho(self):%0A     %0A%0A     return self._Tamanho%0A%0A\n",
             "lines": "2"
+        },
+        {
+            "label": "2025-10-21_13-55-28",
+            "content": "class Chinela :\n    def __init__(self,) :\n        self._Tamanho = int\n        \n\n\n    def getTamanho(self):\n     \n\n     return self._Tamanho\n\n",
+            "lines": "11"
         }
     ]
 }

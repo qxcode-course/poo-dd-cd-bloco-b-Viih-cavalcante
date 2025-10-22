@@ -8,7 +8,7 @@ sources:
 - database: poo
   link: https://github.com/qxcodepoo/arcade/blob/master/Readme.md
   cache_path: C:\Users\vivi5\OneDrive\Documentos\poo_cd\poo-dd-cd-bloco-b-Viih-cavalcante\myrep\.tko\cache\poo.md
-  cache_timestamp: '2025-10-21 03:11:15'
+  cache_timestamp: '2025-10-21 22:12:43'
   filters:
   - acesso
   - simples
@@ -26,4 +26,4 @@ flags:
   graph: 1
   xray: 0
 lang: py
-selected: poo@charger
+selected: poo@motoca
