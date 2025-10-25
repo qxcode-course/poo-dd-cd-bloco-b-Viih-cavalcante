@@ -12,3 +12,8 @@
 2025-10-22 00:17:20, EXEC, v:1, k:poo@motoca, mode:FULL, rate:0
 2025-10-22 00:18:36, EXEC, v:1, k:poo@motoca, mode:FULL, rate:0
 2025-10-22 00:18:37, MOVE, v:1, k:poo@motoca, mode:BACK
+2025-10-22 00:26:04, MOVE, v:1, k:poo@motoca, mode:PICK
+2025-10-22 00:26:05, EXEC, v:1, k:poo@motoca, mode:FULL, rate:0, size:140
+2025-10-22 00:26:12, MOVE, v:1, k:poo@motoca, mode:BACK
+2025-10-22 00:26:31, MOVE, v:1, k:poo@motoca, mode:PICK
+2025-10-22 00:26:33, EXEC, v:1, k:poo@motoca, mode:FULL, rate:0
