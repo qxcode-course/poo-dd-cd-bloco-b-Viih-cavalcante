@@ -7,8 +7,13 @@
         },
         {
             "label": "2025-10-21_03-11-27",
-            "content": "class camisa:\n    def __init__(self) -> None :\n        self._Tamanho :str = \"\"\n    def getTamanho(self) -> str:\n        return  self._tamanho \n    def setTamanho(self,valor: str):_tamanhos_validos = [\"pp\"\n    :::",
+            "content": "@@ -105,12 +105,108 @@\n -%3E str:%0A    \n+    return  self._tamanho %0A    def setTamanho(self,valor: str):_tamanhos_validos = %5B%22pp%22%0A    :::\n",
             "lines": "7"
+        },
+        {
+            "label": "2025-10-24_22-33-51",
+            "content": "class camisa:\n    def __init__(self) -> None :\n        self._Tamanho :str = \"\"\n    def getTamanho(self) -> str:\n    ",
+            "lines": "5"
         }
     ]
 }

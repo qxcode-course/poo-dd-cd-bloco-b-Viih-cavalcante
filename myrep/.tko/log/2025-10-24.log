@@ -42,3 +42,73 @@
 2025-10-24 21:34:43, MOVE, v:1, k:poo@motoca, mode:PICK
 2025-10-24 21:34:48, EXEC, v:1, k:poo@motoca, mode:FULL, rate:100
 2025-10-24 21:34:49, MOVE, v:1, k:poo@motoca, mode:BACK
+2025-10-24 21:41:41, MOVE, v:1, k:poo@roupa, mode:PICK
+2025-10-24 21:41:56, MOVE, v:1, k:poo@roupa, mode:PICK
+2025-10-24 21:43:59, MOVE, v:1, k:poo@roupa, mode:PICK
+2025-10-24 21:44:03, EXEC, v:1, k:poo@roupa, mode:FREE, size:26
+2025-10-24 22:01:25, EXEC, v:1, k:poo@roupa, mode:FULL, rate:0, size:32
+2025-10-24 22:01:28, EXEC, v:1, k:poo@roupa, mode:FULL, rate:0
+2025-10-24 22:01:29, EXEC, v:1, k:poo@roupa, mode:FULL, rate:0
+2025-10-24 22:01:29, EXEC, v:1, k:poo@roupa, mode:FULL, rate:0
+2025-10-24 22:01:29, EXEC, v:1, k:poo@roupa, mode:FULL, rate:0
+2025-10-24 22:01:29, EXEC, v:1, k:poo@roupa, mode:FULL, rate:0
+2025-10-24 22:02:56, EXEC, v:1, k:poo@roupa, mode:FULL, rate:0, size:33
+2025-10-24 22:05:18, EXEC, v:1, k:poo@roupa, mode:FULL, rate:0, size:34
+2025-10-24 22:05:20, EXEC, v:1, k:poo@roupa, mode:FULL, rate:0
+2025-10-24 22:10:29, EXEC, v:1, k:poo@roupa, mode:FULL, rate:0, size:33
+2025-10-24 22:10:30, EXEC, v:1, k:poo@roupa, mode:FULL, rate:0
+2025-10-24 22:10:56, EXEC, v:1, k:poo@roupa, mode:FULL, rate:0
+2025-10-24 22:10:57, EXEC, v:1, k:poo@roupa, mode:FULL, rate:0
+2025-10-24 22:14:03, EXEC, v:1, k:poo@roupa, mode:FULL, rate:0, size:35
+2025-10-24 22:14:13, EXEC, v:1, k:poo@roupa, mode:FULL, rate:0, size:35
+2025-10-24 22:15:24, EXEC, v:1, k:poo@roupa, mode:FULL, rate:0, size:36
+2025-10-24 22:15:26, EXEC, v:1, k:poo@roupa, mode:FULL, rate:0
+2025-10-24 22:15:26, EXEC, v:1, k:poo@roupa, mode:FULL, rate:0
+2025-10-24 22:17:38, EXEC, v:1, k:poo@roupa, mode:FULL, rate:0, size:36
+2025-10-24 22:17:39, EXEC, v:1, k:poo@roupa, mode:FULL, rate:0
+2025-10-24 22:17:50, EXEC, v:1, k:poo@roupa, mode:FULL, rate:0
+2025-10-24 22:17:58, EXEC, v:1, k:poo@roupa, mode:FULL, rate:0, size:36
+2025-10-24 22:27:13, EXEC, v:1, k:poo@roupa, mode:FULL, rate:0, size:37
+2025-10-24 22:27:14, EXEC, v:1, k:poo@roupa, mode:FULL, rate:0
+2025-10-24 22:27:23, EXEC, v:1, k:poo@roupa, mode:FULL, rate:0
+2025-10-24 22:32:16, EXEC, v:1, k:poo@roupa, mode:FULL, rate:0, size:36
+2025-10-24 22:32:18, EXEC, v:1, k:poo@roupa, mode:FULL, rate:0
+2025-10-24 22:32:23, MOVE, v:1, k:poo@roupa, mode:BACK
+2025-10-24 22:32:38, MOVE, v:1, k:poo@camisa, mode:PICK
+2025-10-24 22:32:41, MOVE, v:1, k:poo@camisa, mode:BACK
+2025-10-24 22:32:51, MOVE, v:1, k:poo@camisa, mode:PICK
+2025-10-24 22:33:51, EXEC, v:1, k:poo@camisa, mode:LOCK, rate:0, size:5
+2025-10-24 22:33:53, EXEC, v:1, k:poo@camisa, mode:LOCK, rate:0
+2025-10-24 22:33:54, MOVE, v:1, k:poo@camisa, mode:BACK
+2025-10-24 22:33:58, MOVE, v:1, k:poo@roupa, mode:PICK
+2025-10-24 22:33:59, EXEC, v:1, k:poo@roupa, mode:FULL, rate:0
+2025-10-24 22:34:10, MOVE, v:1, k:poo@roupa, mode:BACK
+2025-10-24 22:34:23, MOVE, v:1, k:poo@roupa, mode:PICK
+2025-10-24 22:34:25, EXEC, v:1, k:poo@roupa, mode:FULL, rate:0
+2025-10-24 22:36:17, EXEC, v:1, k:poo@roupa, mode:FULL, rate:0, size:36
+2025-10-24 22:36:20, EXEC, v:1, k:poo@roupa, mode:FULL, rate:0
+2025-10-24 22:38:53, EXEC, v:1, k:poo@roupa, mode:FULL, rate:0, size:37
+2025-10-24 22:39:26, MOVE, v:1, k:poo@roupa, mode:PICK
+2025-10-24 22:39:31, MOVE, v:1, k:poo@roupa, mode:PICK
+2025-10-24 22:43:55, MOVE, v:1, k:poo@roupa, mode:PICK
+2025-10-24 22:44:14, MOVE, v:1, k:poo@roupa, mode:PICK
+2025-10-24 22:46:09, MOVE, v:1, k:poo@roupa, mode:PICK
+2025-10-24 22:46:10, EXEC, v:1, k:poo@roupa, mode:FULL, rate:0, size:38
+2025-10-24 22:47:07, MOVE, v:1, k:poo@roupa, mode:PICK
+2025-10-24 22:47:20, EXEC, v:1, k:poo@roupa, mode:FULL, rate:0
+2025-10-24 22:49:46, MOVE, v:1, k:poo@roupa, mode:PICK
+2025-10-24 22:50:16, MOVE, v:1, k:poo@camisa, mode:PICK
+2025-10-24 22:50:18, MOVE, v:1, k:poo@camisa, mode:BACK
+2025-10-24 22:50:47, MOVE, v:1, k:poo@camisa, mode:PICK
+2025-10-24 22:50:48, MOVE, v:1, k:poo@camisa, mode:BACK
+2025-10-24 22:52:41, MOVE, v:1, k:poo@camisa, mode:PICK
+2025-10-24 22:52:42, MOVE, v:1, k:poo@camisa, mode:BACK
+2025-10-24 22:54:48, SELF, v:1, k:poo@camisa, human:so_nao_consegui_concluir_pq_ele_quer_invalido_com_acento_mas_com_acento_da_errado_e_sem_acento_tambem, alone:10
+2025-10-24 22:55:02, MOVE, v:1, k:poo@camisa, mode:PICK
+2025-10-24 22:55:04, MOVE, v:1, k:poo@camisa, mode:BACK
+2025-10-24 22:55:42, MOVE, v:1, k:poo@notebook, mode:PICK
+2025-10-24 22:55:42, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:100
+2025-10-24 22:55:44, MOVE, v:1, k:poo@notebook, mode:BACK
+2025-10-24 23:00:44, MOVE, v:1, k:poo@charger, mode:PICK
+2025-10-24 23:00:49, EXEC, v:1, k:poo@charger, mode:FULL, rate:0
+2025-10-24 23:03:07, EXEC, v:1, k:poo@charger, mode:FULL, rate:0

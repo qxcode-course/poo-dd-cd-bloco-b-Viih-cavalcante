@@ -22,8 +22,93 @@
         },
         {
             "label": "2025-10-24_21-24-43",
-            "content": "class Roupa:\n    def __init__(self) -> None:\n        self._tamanho: str = \"\"  # come\u00e7a vazio\n\n    def getTamanho(self) -> str:\n        return self._tamanho\n    def setTamanho(self, tamanho: str) -> None:\n        tamanhos_validos = [\"PP\", \"P\", \"M\", \"G\", \"GG\", \"XG\"]\n        if tamanho in tamanhos_validos:\n            self._tamanho = tamanho\n        else:\n            print(f\"Erro: tamanho inv\u00e1lido! Os tamanhos permitidos s\u00e3o: {', '.join(tamanhos_validos)}\")\ndef main():\n    roupa = Roupa()\n    while True:\n        line: str = input()\n        print(\"$\" + line)\n        args: list[str] = line.split()\n        \n        if args[0] == \"end\":\n            break\n        elif args[0] == \"show\":\n            print(f\"size: ({roupa.getTamanho()})\")\n        elif args[0] == \"size\" and len(args) > 1:\n            roupa.setTamanho(args[1])\nmain()\n\n",
+            "content": "@@ -69,16 +69,33 @@\n str = %22%22\n+  # come%C3%A7a vazio%0A\n %0A    def\n@@ -262,50 +262,8 @@\n G%22%5D%0A\n-        tamanho = tamanho.upper().strip()%0A\n     \n@@ -616,32 +616,24 @@\n   if args%5B0%5D\n-.lower()\n  == %22end%22:%0A \n@@ -665,32 +665,24 @@\n elif args%5B0%5D\n-.lower()\n  == %22show%22:%0A\n@@ -756,16 +756,8 @@\n s%5B0%5D\n-.lower()\n  == \n@@ -822,12 +822,14 @@\n s%5B1%5D)%0Amain()\n+%0A%0A\n",
             "lines": "27"
+        },
+        {
+            "label": "2025-10-24_21-44-03",
+            "content": "@@ -70,17 +70,16 @@\n tr = %22%22%0A\n-%0A\n     def \n@@ -136,13 +136,8 @@\n nho%0A\n-    %0A\n     \n@@ -283,17 +283,16 @@\n strip()%0A\n-%0A\n         \n@@ -359,16 +359,134 @@\n tamanho%0A\n+        else:%0A            print(f%22Erro: tamanho inv%C3%A1lido! Os tamanhos permitidos s%C3%A3o: %7B', '.join(tamanhos_validos)%7D%22)%0A\n def main\n@@ -529,25 +529,8 @@\n ue:%0A\n-        try:%0A    \n     \n@@ -565,42 +565,25 @@\n     \n-except EOFError:%0A            break\n+print(%22$%22 + line)\n %0A   \n@@ -630,94 +630,35 @@\n     \n-if not args:%0A            continue%0A        comando = args%5B0%5D.lower()%0A        if comando\n+%0A        if args%5B0%5D.lower()\n  == \n@@ -691,31 +691,39 @@\n        elif \n-comando\n+args%5B0%5D.lower()\n  == %22show %22:\n@@ -719,17 +719,16 @@\n == %22show\n- \n %22:%0A     \n@@ -790,15 +790,23 @@\n lif \n-comando\n+args%5B0%5D.lower()\n  == \n@@ -873,39 +873,8 @@\n 1%5D)%0A\n-if __name__ == %22__main__%22:%0A    \n main\n",
+            "lines": "26"
+        },
+        {
+            "label": "2025-10-24_22-01-25",
+            "content": "@@ -506,34 +506,8 @@\n eak%0A\n-        print(%22$%22 + line)%0A\n     \n",
+            "lines": "32"
+        },
+        {
+            "label": "2025-10-24_22-02-56",
+            "content": "@@ -737,17 +737,16 @@\n     \n-output = \n+  print(\n f%22si\n@@ -776,40 +776,8 @@\n )%7D)%22\n-%0A          print(output.rstrip()\n )%0A  \n",
+            "lines": "33"
+        },
+        {
+            "label": "2025-10-24_22-05-18",
+            "content": "@@ -732,22 +732,26 @@\n         \n-print(\n+ output = \n f%22size: \n@@ -773,16 +773,48 @@\n nho()%7D)%22\n+%0A          print(output.rstrip()\n )%0A      \n",
+            "lines": "34"
+        },
+        {
+            "label": "2025-10-24_22-10-29",
+            "content": "@@ -370,39 +370,8 @@\n nho%0A\n-        else:%0A            pass%0A\n def \n@@ -719,16 +719,17 @@\n == %22show\n+ \n %22:%0A     \n",
+            "lines": "33"
+        },
+        {
+            "label": "2025-10-24_22-14-03",
+            "content": "@@ -750,17 +750,16 @@\n == %22show\n- \n %22:%0A     \n",
+            "lines": "35"
+        },
+        {
+            "label": "2025-10-24_22-14-13",
+            "content": "@@ -767,17 +767,14 @@\n     \n-output = \n+print(\n f%22si\n@@ -804,30 +804,8 @@\n )%7D)%22\n-%0A         print(output\n )%0A  \n",
+            "lines": "35"
+        },
+        {
+            "label": "2025-10-24_22-15-24",
+            "content": "@@ -750,16 +750,17 @@\n == %22show\n+ \n %22:%0A     \n",
+            "lines": "36"
+        },
+        {
+            "label": "2025-10-24_22-17-38",
+            "content": "@@ -750,17 +750,16 @@\n == %22show\n- \n %22:%0A     \n",
+            "lines": "36"
+        },
+        {
+            "label": "2025-10-24_22-17-58",
+            "content": "@@ -563,48 +563,8 @@\n ne)%0A\n-        normalized_line = line.strip() %0A\n     \n@@ -589,19 +589,8 @@\n %5D = \n-normalized_\n line\n",
+            "lines": "36"
+        },
+        {
+            "label": "2025-10-24_22-27-13",
+            "content": "@@ -559,16 +559,56 @@\n + line)%0A\n+        normalized_line = line.strip() %0A\n         \n@@ -625,16 +625,27 @@\n %5Bstr%5D = \n+normalized_\n line.spl\n",
+            "lines": "37"
+        },
+        {
+            "label": "2025-10-24_22-32-16",
+            "content": "@@ -750,16 +750,17 @@\n == %22show\n+ \n %22:%0A     \n",
+            "lines": "36"
+        },
+        {
+            "label": "2025-10-24_22-36-17",
+            "content": "@@ -397,86 +397,11 @@\n    p\n-rint(f%22fail: Valor invalido, tente%7B%22PP%22, %22P%22, %22M%22, %22G%22, %22GG%22, %22XG%22%7D%22)%0A        \n+ass\n %0Adef\n",
+            "lines": "36"
+        },
+        {
+            "label": "2025-10-24_22-38-53",
+            "content": "@@ -396,209 +396,87 @@\n     \n-tamanhos_lista = %22, %22.join(tamanhos_validos%5B:-1%5D)%0A            tamanhos_formatados = f%22%7Btamanhos_lista%7D ou %7Btamanhos_validos%5B-1%5D%7D%22%0A            print(f%22fail: Valor invalido, tente %7Btamanhos_formatados%7D%22)\n+print(f%22fail: Valor invalido, tente%7B%22PP%22, %22P%22, %22M%22, %22G%22, %22GG%22, %22XG%22%7D%22)%0A        \n %0Adef\n",
+            "lines": "37"
+        },
+        {
+            "label": "2025-10-24_22-46-10",
+            "content": "@@ -6,20 +6,16 @@\n  Roupa:%0A\n-    \n     def \n@@ -24,30 +24,34 @@\n init__(self)\n-:%0A    \n+ -%3E None:%0A\n         self\n@@ -48,25 +48,24 @@\n       self._\n-_\n tamanho: str\n@@ -71,20 +71,16 @@\n r = %22%22%0A%0A\n-    \n     def \n@@ -108,28 +108,24 @@\n tr:%0A        \n- \n-   \n return self.\n@@ -121,25 +121,24 @@\n eturn self._\n-_\n tamanho%0A    \n@@ -138,28 +138,24 @@\n ho%0A    %0A    \n-  \n-  \n def setTaman\n@@ -167,25 +167,31 @@\n lf, \n-value: str):%0A    \n+tamanho: str) -%3E None:%0A\n     \n@@ -259,20 +259,61 @@\n     \n-    if value\n+tamanho = tamanho.upper().strip()%0A%0A        if tamanho\n  in \n@@ -346,19 +346,14 @@\n     \n-    \n self._\n-_\n tama\n@@ -362,18 +362,16 @@\n o = \n-value%0A    \n+tamanho%0A\n     \n@@ -396,143 +396,209 @@\n     \n-    print(%22fail: Valor invalido, tente PP, P, M, G, GG ou XG%22)%0A%0A        def __str__(self):%0A         return f%22size: (%7Bself.__tamanho%7D)%22%0A\n+tamanhos_lista = %22, %22.join(tamanhos_validos%5B:-1%5D)%0A            tamanhos_formatados = f%22%7Btamanhos_lista%7D ou %7Btamanhos_validos%5B-1%5D%7D%22%0A            print(f%22fail: Valor invalido, tente %7Btamanhos_formatados%7D%22)\n %0Adef\n@@ -642,16 +642,33 @@\n e True:%0A\n+        try:%0A    \n         \n@@ -687,16 +687,59 @@\n input()%0A\n+        except EOFError:%0A            break%0A\n         \n@@ -795,17 +795,16 @@\n split()%0A\n-%0A\n         \n@@ -810,22 +810,16 @@\n  if \n-len(args) == 0\n+not args\n :%0A  \n@@ -845,26 +845,60 @@\n         \n-if args%5B0%5D\n+comando = args%5B0%5D.lower()%0A        if comando\n  == %22end\n@@ -927,31 +927,31 @@\n        elif \n-args%5B0%5D\n+comando\n  == %22show%22:%0A\n@@ -949,24 +949,71 @@\n  %22show%22:%0A   \n+      output = f%22size: (%7Broupa.getTamanho()%7D)%22%0A\n          pri\n@@ -1015,21 +1015,22 @@\n   print(\n-r\n ou\n-pa\n+tput\n )%0A      \n@@ -1036,23 +1036,23 @@\n    elif \n-args%5B0%5D\n+comando\n  == %22siz\n@@ -1057,24 +1057,12 @@\n ize%22\n-:%0A            if\n+ and\n  len\n@@ -1073,20 +1073,16 @@\n s) %3E 1:%0A\n-    \n         \n@@ -1115,147 +1115,39 @@\n 1%5D)%0A\n-            else:%0A                print(%22fail: informe o tamanho desejado%22)%0A        else:%0A            print(%22fail: comando desconhecido%22)%0A%0A\n+if __name__ == %22__main__%22:%0A    \n main\n",
+            "lines": "38"
+        },
+        {
+            "label": "2025-10-25_00-42-37",
+            "content": "@@ -396,9 +396,9 @@\n  inv\n-%C3%A1\n+a\n lido\n",
+            "lines": "39"
+        },
+        {
+            "label": "2025-10-25_00-49-44",
+            "content": "class Roupa:\n        def __init__(self):\n            self.__tamanho: str = \"\"\n\n        def getTamanho(self) -> str:\n            return self.__tamanho\n    \n        def setTamanho(self, value: str):\n            tamanhos_validos = [\"PP\", \"P\", \"M\", \"G\", \"GG\", \"XG\"]\n            if value in tamanhos_validos:\n                self.__tamanho = value\n            else:\n                print(\"fail: Valor inv\u00e1lido, tente PP, P, M, G, GG ou XG\")\n\n        def __str__(self):\n         return f\"size: ({self.__tamanho})\"\n\ndef main():\n    roupa = Roupa()\n    while True:\n        line: str = input()\n        print(\"$\" + line)\n        args: list[str] = line.split()\n\n        if len(args) == 0:\n            continue\n        if args[0] == \"end\":\n            break\n        elif args[0] == \"show\":\n            print(roupa)\n        elif args[0] == \"size\":\n            if len(args) > 1:\n                roupa.setTamanho(args[1])\n            else:\n                print(\"fail: informe o tamanho desejado\")\n        else:\n            print(\"fail: comando desconhecido\")\n\nmain()",
+            "lines": "39"
         }
     ]
 }

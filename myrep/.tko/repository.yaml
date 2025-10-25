@@ -8,18 +8,22 @@ sources:
 - database: poo
   link: https://github.com/qxcodepoo/arcade/blob/master/Readme.md
   cache_path: C:\Users\vivi5\OneDrive\Documentos\poo_cd\poo-dd-cd-bloco-b-Viih-cavalcante\myrep\.tko\cache\poo.md
-  cache_timestamp: '2025-10-24 20:55:55'
+  cache_timestamp: '2025-10-25 00:21:35'
   filters:
   - acesso
   - simples
 expanded:
 - poo@bloco_b-modificadores-de-acesso
-- poo@bloco_b-agregação-simples
 - poo@campanha-principal
+- poo@bloco_b-agregação-simples
 tasks:
+  poo@camisa: '{human:so_nao_consegui_concluir_pq_ele_quer_invalido_com_acento_mas_com_acento_da_errado_e_sem_acento_tambem,
+    alone:10}'
+  poo@roupa: '{human:i, alone:9}'
   poo@relogio: '{rate:100, human:irma, iagen:gpt_e_muito_bom_pra_explicar_duvidas_do_porque_esta_dando_errado,
     alone:6, study:180}'
   poo@motoca: '{rate:100, human:irma, iagen:tive_que_tirar_algumad, alone:5, study:140}'
+  poo@charger: '{rate:5}'
 flags:
   quests: 0
   tracks: 1
@@ -27,4 +31,4 @@ flags:
   graph: 1
   xray: 0
 lang: py
-selected: poo@motoca
+selected: poo@charger

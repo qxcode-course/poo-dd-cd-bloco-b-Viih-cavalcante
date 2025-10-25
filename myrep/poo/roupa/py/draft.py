@@ -1,27 +1,39 @@
 class Roupa:
-    def __init__(self) -> None:
-        self._tamanho: str = ""  # começa vazio
+        def __init__(self):
+            self.__tamanho: str = ""
 
-    def getTamanho(self) -> str:
-        return self._tamanho
-    def setTamanho(self, tamanho: str) -> None:
-        tamanhos_validos = ["PP", "P", "M", "G", "GG", "XG"]
-        if tamanho in tamanhos_validos:
-            self._tamanho = tamanho
-        else:
-            print(f"Erro: tamanho inválido! Os tamanhos permitidos são: {', '.join(tamanhos_validos)}")
+        def getTamanho(self) -> str:
+            return self.__tamanho
+    
+        def setTamanho(self, value: str):
+            tamanhos_validos = ["PP", "P", "M", "G", "GG", "XG"]
+            if value in tamanhos_validos:
+                self.__tamanho = value
+            else:
+                print("fail: Valor invalido, tente PP, P, M, G, GG ou XG")
+
+        def __str__(self):
+         return f"size: ({self.__tamanho})"
+
 def main():
     roupa = Roupa()
     while True:
         line: str = input()
         print("$" + line)
         args: list[str] = line.split()
-        
+
+        if len(args) == 0:
+            continue
         if args[0] == "end":
             break
         elif args[0] == "show":
-            print(f"size: ({roupa.getTamanho()})")
-        elif args[0] == "size" and len(args) > 1:
-            roupa.setTamanho(args[1])
-main()
+            print(roupa)
+        elif args[0] == "size":
+            if len(args) > 1:
+                roupa.setTamanho(args[1])
+            else:
+                print("fail: informe o tamanho desejado")
+        else:
+            print("fail: comando desconhecido")
 
+main()

@@ -2,8 +2,23 @@
     "patches": [
         {
             "label": "2025-10-20_22-20-09",
-            "content": "",
+            "content": "@@ -1,1774 +0,0 @@\n-class Notebook:%0A    def __init__(self):%0A        self._ligado: bool = False%0A    def getLigado(self) -%3E bool:%0A            return self._ligado%0A    def setLigado(self, valor: bool) -%3E None:%0A        self._ligado = valor%0A    def ligar(self) -%3E None:%0A         if not self._ligado:%0A              self._ligado = True%0A              print(%22notebook ligado%22)%0A         else:%0A              print(%22ja est%C3%A1 ligado%22)%0A    def desligar(self) -%3E None:%0A         if self._ligado:%0A              self._ligado = False%0A              print(%22notebook desligado%22)%0A         else:%0A              print(%22ja esta desligado%22)%0A    def mostrar(self) -%3E None:%0A        status = %22ligado%22 if self._ligado else %22desligado%22%0A        print(f%22status: %7Bstatus%7D%22)%0A    def usar(self, tempo:int) -%3E None:%0A         if not self._ligado:%0A              print(%22erro: ligue o notebook primeiro%22)%0A              return%0A         print(f%22Usando por %7Btempo%7D minutos%22)%0Adef main():%0A     notebook = Notebook()%0A     while True:%0A        try:%0A            line: str = input()%0A        except EOFError:%0A            break%0A        print(%22$%22 + line)%0A        args = line.strip().split()%0A        if len(args) == 0:%0A             continue%0A        cmd = args%5B0%5D.lower()%0A        if cmd == %22end%22:%0A             break%0A        elif cmd == %22show%22 or cmd == %22mostrar%22:%0A             notebook.mostrar()%0A        elif cmd == %22ligar%22:%0A            notebook.ligar()%0A        elif cmd == %22usar%22:%0A             if len(args) %3C 2:%0A                print(%22uso: usar %3C minutos%3E%22)%0A                continue%0A             try:%0A                  minutos = int(args%5B1%5D)%0A             except ValueError:%0A                  print(%22minuto deve ser um n%C3%BAmero inteiro%22)%0A                  continue%0A             notebook.usar(minutos)%0A        else:%0A            print(%22comando desconhecido%22)\n",
             "lines": "0"
+        },
+        {
+            "label": "2025-10-25_00-14-10",
+            "content": "@@ -1771,42 +1771,4 @@\n do%22)\n-%0Aif __name__ == %22__main__%22:%0A    main()\n",
+            "lines": "57"
+        },
+        {
+            "label": "2025-10-25_00-17-46",
+            "content": "@@ -1795,14 +1795,18 @@\n ain__%22:%0A\n+    \n main()\n",
+            "lines": "59"
+        },
+        {
+            "label": "2025-10-25_00-54-10",
+            "content": "class Notebook:\n    def __init__(self):\n        self._ligado: bool = False\n    def getLigado(self) -> bool:\n            return self._ligado\n    def setLigado(self, valor: bool) -> None:\n        self._ligado = valor\n    def ligar(self) -> None:\n         if not self._ligado:\n              self._ligado = True\n              print(\"notebook ligado\")\n         else:\n              print(\"ja est\u00e1 ligado\")\n    def desligar(self) -> None:\n         if self._ligado:\n              self._ligado = False\n              print(\"notebook desligado\")\n         else:\n              print(\"ja esta desligado\")\n    def mostrar(self) -> None:\n        status = \"ligado\" if self._ligado else \"desligado\"\n        print(f\"status: {status}\")\n    def usar(self, tempo:int) -> None:\n         if not self._ligado:\n              print(\"erro: ligue o notebook primeiro\")\n              return\n         print(f\"Usando por {tempo} minutos\")\ndef main():\n     notebook = Notebook()\n     while True:\n        try:\n            line: str = input()\n        except EOFError:\n            break\n        print(\"$\" + line)\n        args = line.strip().split()\n        if len(args) == 0:\n             continue\n        cmd = args[0].lower()\n        if cmd == \"end\":\n             break\n        elif cmd == \"show\" or cmd == \"mostrar\":\n             notebook.mostrar()\n        elif cmd == \"ligar\":\n            notebook.ligar()\n        elif cmd == \"usar\":\n             if len(args) < 2:\n                print(\"uso: usar < minutos>\")\n                continue\n             try:\n                  minutos = int(args[1])\n             except ValueError:\n                  print(\"minuto deve ser um n\u00famero inteiro\")\n                  continue\n             notebook.usar(minutos)\n        else:\n            print(\"comando desconhecido\")\nif __name__ == \"__main__\":\nmain()",
+            "lines": "59"
         }
     ]
 }
