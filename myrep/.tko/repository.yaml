@@ -8,7 +8,7 @@ sources:
 - database: poo
   link: https://github.com/qxcodepoo/arcade/blob/master/Readme.md
   cache_path: C:\Users\vivi5\OneDrive\Documentos\poo_cd\poo-dd-cd-bloco-b-Viih-cavalcante\myrep\.tko\cache\poo.md
-  cache_timestamp: '2025-10-26 02:23:45'
+  cache_timestamp: '2025-10-26 19:46:25'
   filters:
   - acesso
   - simples
@@ -22,7 +22,10 @@ tasks:
   poo@relogio: '{rate:100, human:irma, iagen:gpt_e_muito_bom_pra_explicar_duvidas_do_porque_esta_dando_errado,
     alone:6, study:180}'
   poo@motoca: '{rate:100, human:irma, iagen:tive_que_tirar_algumad, alone:5, study:140}'
-  poo@charger: '{rate:15}'
+  poo@notebook: '{rate:70, alone:8, study:40}'
+  poo@charger: '{rate:85, human:desenrolei_o_maximo_q_consegui_depois_nem_com_ajuda_consegui_concluir,
+    study:180}'
+  poo@tamagotchi: '{alone:7, study:120}'
 flags:
   quests: 0
   tracks: 1
