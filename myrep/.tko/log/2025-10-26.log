@@ -1,0 +1,14 @@
+2025-10-26 01:49:42, SELF, v:1, k:poo@camisa, rate:100, alone:10
+2025-10-26 01:49:45, MOVE, v:1, k:poo@camisa, mode:PICK
+2025-10-26 01:52:13, EXEC, v:1, k:poo@camisa, mode:LOCK, rate:0
+2025-10-26 02:04:50, EXEC, v:1, k:poo@camisa, mode:LOCK, rate:100, size:14
+2025-10-26 02:04:51, EXEC, v:1, k:poo@camisa, mode:LOCK, rate:100
+2025-10-26 02:05:02, MOVE, v:1, k:poo@camisa, mode:BACK
+2025-10-26 02:05:06, MOVE, v:1, k:poo@camisa, mode:PICK
+2025-10-26 02:05:09, EXEC, v:1, k:poo@camisa, mode:FREE
+2025-10-26 02:23:57, MOVE, v:1, k:poo@charger, mode:PICK
+2025-10-26 02:24:05, EXEC, v:1, k:poo@charger, mode:FULL, rate:15
+2025-10-26 02:24:49, EXEC, v:1, k:poo@charger, mode:FULL, rate:25, size:154
+2025-10-26 02:25:37, EXEC, v:1, k:poo@charger, mode:FULL, rate:15, size:154
+2025-10-26 02:26:05, EXEC, v:1, k:poo@charger, mode:FULL, rate:15
+2025-10-26 02:34:08, MOVE, v:1, k:poo@charger, mode:BACK

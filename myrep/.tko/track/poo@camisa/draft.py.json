@@ -12,8 +12,13 @@
         },
         {
             "label": "2025-10-24_22-33-51",
-            "content": "class camisa:\n    def __init__(self) -> None :\n        self._Tamanho :str = \"\"\n    def getTamanho(self) -> str:\n    ",
+            "content": "@@ -50,25 +50,25 @@\n       self._\n-t\n+T\n amanho :str \n@@ -113,366 +113,4 @@\n     \n-    return self._tamanho%0A    def setTamanho(self, valor: str):%0A        tamanhos_validos = %5B%22PP%22, %22P%22, %22M%22, %22G%22, %22GG%22, %22XG%22%5D%0A        valor = valor.strip().upper()%0A%0A        if valor in tamanhos_validos:%0A            self.__tamanho = valor%0A        else:%0A            print(%22 Tamanho inv%C3%A1lido!%22)%0A            print(%22Tamanhos v%C3%A1lidos s%C3%A3o:%22, %22, %22.join(tamanhos_validos))%0A\n",
             "lines": "5"
+        },
+        {
+            "label": "2025-10-26_02-04-50",
+            "content": "class camisa:\n    def __init__(self) -> None :\n        self._tamanho :str = \"\"\n    def getTamanho(self) -> str:\n        return self._tamanho\n    def setTamanho(self, valor: str):\n        tamanhos_validos = [\"PP\", \"P\", \"M\", \"G\", \"GG\", \"XG\"]\n        valor = valor.strip().upper()\n\n        if valor in tamanhos_validos:\n            self.__tamanho = valor\n        else:\n            print(\" Tamanho inv\u00e1lido!\")\n            print(\"Tamanhos v\u00e1lidos s\u00e3o:\", \", \".join(tamanhos_validos))\n",
+            "lines": "14"
         }
     ]
 }

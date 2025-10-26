@@ -107,8 +107,18 @@
         },
         {
             "label": "2025-10-25_00-49-44",
-            "content": "class Roupa:\n        def __init__(self):\n            self.__tamanho: str = \"\"\n\n        def getTamanho(self) -> str:\n            return self.__tamanho\n    \n        def setTamanho(self, value: str):\n            tamanhos_validos = [\"PP\", \"P\", \"M\", \"G\", \"GG\", \"XG\"]\n            if value in tamanhos_validos:\n                self.__tamanho = value\n            else:\n                print(\"fail: Valor inv\u00e1lido, tente PP, P, M, G, GG ou XG\")\n\n        def __str__(self):\n         return f\"size: ({self.__tamanho})\"\n\ndef main():\n    roupa = Roupa()\n    while True:\n        line: str = input()\n        print(\"$\" + line)\n        args: list[str] = line.split()\n\n        if len(args) == 0:\n            continue\n        if args[0] == \"end\":\n            break\n        elif args[0] == \"show\":\n            print(roupa)\n        elif args[0] == \"size\":\n            if len(args) > 1:\n                roupa.setTamanho(args[1])\n            else:\n                print(\"fail: informe o tamanho desejado\")\n        else:\n            print(\"fail: comando desconhecido\")\n\nmain()",
+            "content": "@@ -1,110 +1,4 @@\n-import sys, io, os%0A%0Asys.stdout = io.TextIOWrapper(os.fdopen(sys.stdout.fileno(), %22wb%22), encoding=%22utf-8%22)%0A\n clas\n@@ -392,17 +392,17 @@\n alor inv\n-a\n+%C3%A1\n lido, te\n",
             "lines": "39"
+        },
+        {
+            "label": "2025-10-25_22-55-18",
+            "content": "@@ -502,9 +502,9 @@\n  inv\n-%C3%A1\n+a\n lido\n",
+            "lines": "42"
+        },
+        {
+            "label": "2025-10-25_22-56-08",
+            "content": "import sys, io, os\n\nsys.stdout = io.TextIOWrapper(os.fdopen(sys.stdout.fileno(), \"wb\"), encoding=\"utf-8\")\nclass Roupa:\n        def __init__(self):\n            self.__tamanho: str = \"\"\n\n        def getTamanho(self) -> str:\n            return self.__tamanho\n    \n        def setTamanho(self, value: str):\n            tamanhos_validos = [\"PP\", \"P\", \"M\", \"G\", \"GG\", \"XG\"]\n            if value in tamanhos_validos:\n                self.__tamanho = value\n            else:\n                print(\"fail: Valor inv\u00e1lido, tente PP, P, M, G, GG ou XG\")\n\n        def __str__(self):\n         return f\"size: ({self.__tamanho})\"\n\ndef main():\n    roupa = Roupa()\n    while True:\n        line: str = input()\n        print(\"$\" + line)\n        args: list[str] = line.split()\n\n        if len(args) == 0:\n            continue\n        if args[0] == \"end\":\n            break\n        elif args[0] == \"show\":\n            print(roupa)\n        elif args[0] == \"size\":\n            if len(args) > 1:\n                roupa.setTamanho(args[1])\n            else:\n                print(\"fail: informe o tamanho desejado\")\n        else:\n            print(\"fail: comando desconhecido\")\n\nmain()",
+            "lines": "42"
         }
     ]
 }

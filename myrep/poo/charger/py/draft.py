@@ -1,3 +1,6 @@
+import sys, io, os
+
+sys.stdout = io.TextIOWrapper(os.fdopen(sys.stdout.fileno(), "wb"), encoding="utf-8")
 class Bateria:
     def __init__(self, capacidade: int) :
         self._capacidade = capacidade
@@ -30,7 +33,7 @@ class Notebook:
             self._ligado = True
             print("notebook ligado")
         else:
-            print("fail: nao foi possivel ligar")
+            print("fail: não foi possível ligar")
     def desligar(self) -> None:
         if self._ligado:
             self._ligado = False
@@ -107,7 +110,7 @@ def main() :
             break
         elif cmd in ("show", "mostrar"):
             notebook.mostrar()
-        elif cmd in ("turn_on", "ligar"):
+        elif cmd in ("ligar"):
             notebook.ligar()
         elif cmd in ("turn_off", "desligar"):
             notebook.desligar()

@@ -1,3 +1,6 @@
+import sys, io, os
+
+sys.stdout = io.TextIOWrapper(os.fdopen(sys.stdout.fileno(), "wb"), encoding="utf-8")
 class Roupa:
         def __init__(self):
             self.__tamanho: str = ""
@@ -10,7 +13,7 @@ class Roupa:
             if value in tamanhos_validos:
                 self.__tamanho = value
             else:
-                print("fail: Valor invalido, tente PP, P, M, G, GG ou XG")
+                print("fail: Valor inválido, tente PP, P, M, G, GG ou XG")
 
         def __str__(self):
          return f"size: ({self.__tamanho})"
