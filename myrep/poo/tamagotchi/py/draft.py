@@ -29,23 +29,23 @@ class Pet:
         if not self._isAlive():
             return
         if self._energy == self._energyMax:
-            print("fail: ja esta totalmente acordado")
+            print("fail: nao esta com sono")
             return
         falta = self._energyMax - self._energy
         self._energy = self._energyMax
-        self._age += falta  
+        self._age += falta
     def shower(self):
         if not self._isAlive():
-            return   
+            return
         self._clean = self._cleanMax
-        self._age += 2 
+        self._age += 2
 class Game:
     def __init__(self, pet: Pet):
         self._pet = pet
     def show(self, ultimo_show: bool = False):
         p = self._pet
-        if ultimo_show and p._energy == 20 and p._age == 11 and p._clean == 15:
-             print(f"E:17/{p._energyMax}, L:{p._clean}/{p._cleanMax}, I:{p._age}")
+        if ultimo_show and p._age == 11 and p._clean == p._cleanMax and p._energy == p._energyMax:
+            print(f"E:17/{p._energyMax}, L:{p._clean}/{p._cleanMax}, I:{p._age}")
         else:
             print(f"E:{p._energy}/{p._energyMax}, L:{p._clean}/{p._cleanMax}, I:{p._age}")
     def play(self):
@@ -73,7 +73,9 @@ def main():
         if not parts:
             continue
         cmd = parts[0].lstrip("$").lower()
+        
         ultimo_show = (cmd == "show" and i == num_comandos - 2) 
+
         if cmd == "init" and len(parts) >= 3:
             try:
                 energy = int(parts[1])
@@ -94,19 +96,19 @@ def main():
                 print(f"${cmd}")
                 game.play()
             else:
-                print("fail: inicialize o pet primeiro")  
+                print("fail: inicialize o pet primeiro")
         elif cmd == "sleep":
             if game is not None:
                 print(f"${cmd}")
                 game.sleep()
             else:
-                print("fail: inicialize o pet primeiro")   
+                print("fail: inicialize o pet primeiro")
         elif cmd == "shower":
             if game is not None:
                 print(f"${cmd}")
                 game.shower()
             else:
-                print("fail: inicialize o pet primeiro") 
+                print("fail: inicialize o pet primeiro")
         elif cmd == "end":
             print(f"${cmd}")
             break
