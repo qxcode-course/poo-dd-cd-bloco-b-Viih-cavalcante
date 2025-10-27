@@ -17,6 +17,7 @@ expanded:
 - poo@campanha-principal
 - poo@bloco_b-agregação-simples
 tasks:
+  poo@chinela: '{rate:90, human:irma, alone:9, study:90}'
   poo@camisa: '{rate:100, alone:10}'
   poo@roupa: '{rate:100, human:i, alone:9}'
   poo@relogio: '{rate:100, human:irma, iagen:gpt_e_muito_bom_pra_explicar_duvidas_do_porque_esta_dando_errado,

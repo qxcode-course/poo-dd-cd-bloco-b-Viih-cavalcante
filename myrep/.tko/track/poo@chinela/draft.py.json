@@ -12,8 +12,13 @@
         },
         {
             "label": "2025-10-21_13-55-28",
-            "content": "class Chinela :\n    def __init__(self,) :\n        self._Tamanho = int\n        \n\n\n    def getTamanho(self):\n     \n\n     return self._Tamanho\n\n",
+            "content": "@@ -6,16 +6,17 @@\n  Chinela\n+ \n :%0A    de\n@@ -26,25 +26,27 @@\n _init__(self\n-)\n+,) \n :%0A        se\n@@ -53,802 +53,89 @@\n lf._\n-tamanho = 0%0A%0A    def setTamanho(self, tamanho: int):%0A        if tamanho %3C 20 or tamanho %3E 50:%0A            print(%22fail: tamanho fora do intervalo permitido (20-50)%22)%0A            return False%0A        if tamanho %25 2 != 0:%0A            print(%22fail: tamanho deve ser par%22)%0A            return False%0A        self._tamanho = tamanho%0A        return True%0A%0A    def getTamanho(self):%0A        return self._tamanho%0A%0A%0Adef main():%0A    chinela = Chinela()%0A    while True:%0A        try:%0A            valor = int(input(%22Digite o tamanho da chinela: %22))%0A            if chinela.setTamanho(valor):%0A                break%0A        except ValueError:%0A            print(%22fail: entrada invalida, digite um numero inteiro%22)%0A%0A    print(f%22Tamanho da chinela definido: %7Bchinela.getTamanho()%7D%22)%0A%0A%0Aif __name__ == %22__main__%22:%0A    main()\n+Tamanho = int%0A        %0A%0A%0A    def getTamanho(self):%0A     %0A%0A     return self._Tamanho%0A%0A\n",
             "lines": "11"
+        },
+        {
+            "label": "2025-10-26_23-56-03",
+            "content": "class Chinela:\n    def __init__(self):\n        self._tamanho = 0\n\n    def setTamanho(self, tamanho: int):\n        if tamanho < 20 or tamanho > 50:\n            print(\"fail: tamanho fora do intervalo permitido (20-50)\")\n            return False\n        if tamanho % 2 != 0:\n            print(\"fail: tamanho deve ser par\")\n            return False\n        self._tamanho = tamanho\n        return True\n\n    def getTamanho(self):\n        return self._tamanho\n\n\ndef main():\n    chinela = Chinela()\n    while True:\n        try:\n            valor = int(input(\"Digite o tamanho da chinela: \"))\n            if chinela.setTamanho(valor):\n                break\n        except ValueError:\n            print(\"fail: entrada invalida, digite um numero inteiro\")\n\n    print(f\"Tamanho da chinela definido: {chinela.getTamanho()}\")\n\n\nif __name__ == \"__main__\":\n    main()",
+            "lines": "33"
         }
     ]
 }

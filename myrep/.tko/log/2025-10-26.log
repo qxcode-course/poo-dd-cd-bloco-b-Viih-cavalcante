@@ -148,3 +148,10 @@
 2025-10-26 23:44:55, SELF, v:1, k:poo@charger, rate:85, human:desenrolei_o_maximo_q_consegui_depois_nem_com_ajuda_consegui_concluir, alone:9, study:180
 2025-10-26 23:45:30, SELF, v:1, k:poo@charger, rate:85, human:desenrolei_o_maximo_q_consegui_depois_nem_com_ajuda_consegui_concluir, alone:9, study:360
 2025-10-26 23:46:34, SELF, v:1, k:poo@chinela
+2025-10-26 23:56:02, MOVE, v:1, k:poo@chinela, mode:PICK
+2025-10-26 23:56:03, EXEC, v:1, k:poo@chinela, mode:LOCK, rate:0, size:33
+2025-10-26 23:56:06, MOVE, v:1, k:poo@chinela, mode:BACK
+2025-10-26 23:56:50, SELF, v:1, k:poo@chinela, rate:90, human:irma, alone:9, study:70
+2025-10-26 23:56:56, MOVE, v:1, k:poo@chinela, mode:PICK
+2025-10-26 23:56:58, MOVE, v:1, k:poo@chinela, mode:BACK
+2025-10-26 23:57:05, SELF, v:1, k:poo@chinela, rate:90, human:irma, alone:9, study:90
