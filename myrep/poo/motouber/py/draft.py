@@ -2,7 +2,6 @@ class Pessoa:
     def __init__(self, name: str, money: int):
         self.__name: str = name
         self.__money: int = money
-
     def getName(self) -> str:
         return self.__name
     def getMoney(self) -> int:

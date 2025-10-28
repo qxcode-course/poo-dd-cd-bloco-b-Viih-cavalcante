@@ -72,3 +72,14 @@
 2025-10-28 14:19:22, SELF, v:1, k:poo@motouber, rate:100, alone:7, study:140
 2025-10-28 14:19:26, MOVE, v:1, k:poo@chinela, mode:PICK
 2025-10-28 14:19:49, MOVE, v:1, k:poo@chinela, mode:BACK
+2025-10-28 14:26:05, MOVE, v:1, k:poo@notebook, mode:PICK
+2025-10-28 14:26:06, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0
+2025-10-28 14:26:08, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0
+2025-10-28 14:26:26, MOVE, v:1, k:poo@notebook, mode:BACK
+2025-10-28 14:26:47, SELF, v:1, k:poo@notebook, rate:70, alone:8, study:120
+2025-10-28 14:27:01, SELF, v:1, k:poo@notebook, rate:70, alone:8, study:120
+2025-10-28 14:27:05, MOVE, v:1, k:poo@charger, mode:PICK
+2025-10-28 14:27:09, MOVE, v:1, k:poo@charger, mode:BACK
+2025-10-28 14:27:21, SELF, v:1, k:poo@charger, rate:85, human:desenrolei_o_maximo_q_consegui_depois_nem_com_ajuda_consegui_concluir, iagen:gemini, alone:9, study:370
+2025-10-28 14:27:48, SELF, v:1, k:poo@motouber, rate:100, alone:7, study:140
+2025-10-28 14:28:03, SELF, v:1, k:poo@motouber, rate:100, alone:7, study:150
