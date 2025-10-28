@@ -8,7 +8,7 @@ sources:
 - database: poo
   link: https://github.com/qxcodepoo/arcade/blob/master/Readme.md
   cache_path: C:\Users\vivi5\OneDrive\Documentos\poo_cd\poo-dd-cd-bloco-b-Viih-cavalcante\myrep\.tko\cache\poo.md
-  cache_timestamp: '2025-10-26 23:23:37'
+  cache_timestamp: '2025-10-27 23:13:32'
   filters:
   - acesso
   - simples
@@ -26,7 +26,7 @@ tasks:
     alone:8, study:140}'
   poo@notebook: '{rate:70, alone:8, study:40}'
   poo@charger: '{rate:85, human:desenrolei_o_maximo_q_consegui_depois_nem_com_ajuda_consegui_concluir,
-    alone:9, study:360}'
+    iagen:gemini, alone:9, study:360}'
   poo@tamagotchi: '{rate:50, iagen:pedi_ajuda_com_a_linha_q_tava_dando_erro_mas_nao_consegui_corrigir_de_forma_alguma_nem_com_gemini_nem_gpt,
     alone:9, study:190}'
 flags:
@@ -36,4 +36,4 @@ flags:
   graph: 1
   xray: 0
 lang: py
-selected: poo@chinela
+selected: poo@grafite

@@ -2,8 +2,13 @@
     "patches": [
         {
             "label": "2025-10-20_22-19-44",
-            "content": "",
-            "lines": "0"
+            "content": "@@ -1,8 +1,27 @@\n+@@ -1,325 +0,0 @@%0A-\n class Pe\n@@ -25,17 +25,19 @@\n  Peesoa:\n-%0A\n+%250A\n     def \n@@ -75,17 +75,19 @@\n y :int):\n-%0A\n+%250A\n         \n@@ -105,25 +105,27 @@\n : str = name\n-%0A\n+%250A\n         self\n@@ -140,25 +140,27 @@\n  int = money\n-%0A\n+%250A\n     def getN\n@@ -174,15 +174,19 @@\n f) -\n-%3E\n+%253E\n  str:\n-%0A\n+%250A\n     \n@@ -206,17 +206,19 @@\n lf._name\n-%0A\n+%250A\n     def \n@@ -232,23 +232,27 @@\n y(self)-\n-%3E\n+%253E\n  int:\n-%0A\n+%250A\n         \n@@ -269,17 +269,19 @@\n f._money\n-%0A\n+%250A\n     def \n@@ -312,15 +312,19 @@\n nt)-\n-%3E\n+%253E\n  int:\n-%0A\n+%250A\n     \n@@ -346,17 +346,19 @@\n  = valor\n-%0A\n+%250A\n     def \n@@ -362,9 +362,12 @@\n ef pagar\n+%250A\n %0A\n",
+            "lines": "2"
+        },
+        {
+            "label": "2025-10-27_23-37-39",
+            "content": "class Peesoa:\n    def __init__(self, name : str, money :int):\n        self._name : str = name\n        self._money: int = money\n    def getName(self) -> str:\n        return self._name\n    def getMoney(self)-> int:\n        return self._money\n    def setMoney(self, valor : int)-> int:\n        self._money = valor\n    def pagar\n",
+            "lines": "11"
         }
     ]
 }
